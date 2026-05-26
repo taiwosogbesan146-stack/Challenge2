@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+
+  
+<div class="container">
+  <div class="logo">
+    <div class="logo-box">
+      <i class="fa-solid fa-layer-group"></i>
+    </div>
+    <h2 class="flex-frontpage">Frontpage</h2>
+    <header class="topbar">
+
+      <div class="tabs">
+        <button class="tab tab-color">Feed</button>
+        <button class="tab">Digest</button>
+        <button class="tab">Discover</button>
+      </div>
+
+      <div class="top-right">
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput"
+          placeholder="Search articles...">
+        </div>
+
+        <button class="icon-btn">
+          <img src="icon/add-icon.svg" class="add-icon">
+         
+          
+        </button>
+
+        <button id="themeToggle" class="theme-btn">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <div class="avatar">
+          MS
+        </div>
+      
+        
+        
+      </div>
+
+    </header>
+</div>
+
+  
+  
+  
+  
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    
+
+    <div class="menu">
+
+      <div class="menu-item active">
+        <div class="left">
+          <i class="fa-solid fa-inbox"></i>
+          <span>All Items</span>
+        </div>
+
+        <p>47</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="left">
+          <i class="fa-regular fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+
+        <p>12</p>
+      </div>
+
+    </div>
+
+    <h4 class="title">CATEGORIES</h4>
+
+    <div class="categories">
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="dot blue"></span>
+          <p>Frontend</p>
+        </div>
+        <span>14</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot red"><div class="s-dot">c</div></span>
+          <p>CSS-Tricks</p>
+        </div>
+        <span>3</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot red"><div class="s-dot">s</div></span>
+          <p>Smashing Mag</p>
+        </div>
+        <span>4</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot purple"><div class="s-dot">j</div></span>
+          <p>Josh Comeau</p>
+        </div>
+        <span>2</span>
+      </div>
+
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot blue"><div class="s-dot">k</div></span>
+          <p>Kent C. Dodds</p>
+        </div>
+        <span>2</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot blue"><div class="s-dot">w</div></span>
+          <p>web.dev</p>
+        </div>
+        <span>3</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="dot purple"></span>
+          <p>Design</p>
+        </div>
+        <span>11</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot purple"><div class="s-dot">s</div></span>
+          <p>Sidebar.io</p>
+        </div>
+        <span>5</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot green"><div class="s-dot">N</div></span>
+          <p>NN Group</p>
+        </div>
+        <span>2</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot small-dot-black"><div class="s-dot">f</div></span>
+          <p>Figma Blog</p>
+        </div>
+        <span>2</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="small-dot blue"><div class="s-dot">u</div></span>
+          <p>UX Collective</p>
+        </div>
+        <span>2</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="dot small-dot-yellow"></span>
+          <p>Backend $ DevOps</p>
+        </div>
+        <span>8</span>
+      </div>
+
+      <div class="category">
+        <div class="cat-left">
+          <span class="dot blue"></span>
+          <p>General Tech</p>
+        </div>
+        <span>6</span>
+      </div>
+      <div class="category">
+        <div class="cat-left">
+          <span class="dot purple"></span>
+          <p>AI & ML</p>
+        </div>
+        <span>8</span>
+      </div>
+
+    </div>
+
+    <div class="bottom-text">
+      <i class="fa-regular fa-circle-check " ></i>
+      <span >All feeds healthy</span>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="toolbar">
+
+      <div class="toolbar-left">
+        <button class="toolbar-btn">
+          <img src="icon/bar-three.svg" class="add-icon">
+          
+        </button>
+
+        <button class="toolbar-btn">
+          <img src="icon/grid-view.png" class="add-icon">
+         
+        </button>
+
+        <button class="toolbar-btn">
+          <img src="icon/bar-four.svg" class="add-icon">
+          
+        </button>
+      </div>
+
+      <div class="toolbar-right">
+
+        <button class="toolbar-btn">
+          Newest
+        </button>
+
+        <button class="toolbar-btn">
+          Refresh
+        </button>
+
+        <button class="toolbar-btn blue-btn">
+          Mark all read
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="notification">
+      ↑ 5 new items since your last visit
+    </div>
+
+    <section class="content">
+
+      <div class="content-head">
+        <h1>All Items</h1>
+        <span id="unreadCount">47 unread</span>
+      </div>
+
+      <div class="card">
+        <div class="sidebar-flex" >
+          <span class="small-dot-flex blue"></span>
+        <div class="card-top">
+
+          <div class="card-left">
+            <span class="small-dot red"><div class="s-dot">s</div></span>
+            <span >Smashing Magazine &#8226 2h ago</span>
+            
+          </div>
+
+         
+
+        </div>
+
+        <h2>
+          Practical Guide To Designing For Colorblind Users
+        </h2>
+
+        <p>
+          Color blindness affects roughly 8% of men and 0.5% of women worldwide. Yet most interfaces rely heavily on color to convey meaning, status, and hierarchy. Here's how to design interfaces that work for everyone without sacrificing visual richness.
+        </p>
+
+        <span class="tag design">
+          Design
+        </span>
+      </div>
+      </div>
+
+    
+      <div class="card">
+        <div class="sidebar-flex" >
+          <span class="small-dot-flex blue"></span>
+        <div class="card-top">
+
+          <div class="card-left">
+            <span class="small-dot orange"><div class="s-dot">c</div></span>
+            <span>Cloudflare Blog &#8226 3h ago</span>
+          </div>
+
+          
+
+        </div>
+
+        <h2>
+          How We Reduced P99 Latency by 60% with Edge-First Caching
+        </h2>
+
+        <p>
+          Our engineering team spent the last quarter rethinking how we cache at the edge. The result: dramatically lower tail latency for our most demanding customer, and lessons applicable to any distributed system.
+        </p>
+
+        <span class="tag backend">
+          Backend & DevOps
+        </span>
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="sidebar-flex" >
+          <span class="small-dot-flex blue"></span>
+        <div class="card-top">
+
+          <div class="card-left">
+            
+            <span class="small-dot small-dot-black"><div class="s-dot">s</div></span>
+            <span>Simon Willison &#8226 4h ago</span>
+          </div>
+
+
+        </div>
+
+        <h2>
+          Building Effective RAG Systems:What Actually Works in Production
+        </h2>
+
+        <p>
+          After months of experimenting with retieval-augemented generation in real applications, here's what i've learned about chunking strategies, embedding models, and the surprising importance of metadata filtering.  
+        </p>
+
+        <span class="tag ai">
+          AI & ML
+        </span>
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="sidebar-flex" >
+          <span class="small-dot-flex blue"></span>
+        <div class="card-top">
+
+          <div class="card-left">
+            <span class="small-dot blue"><div class="s-dot">J</div></span>
+            <span>Josh Comeau &#8226 5h ago</span>
+          </div>
+
+
+        </div>
+
+        <h2>
+        The Suprising Truth About CSS Container Queries
+        </h2>
+
+        <p>
+          Container queries have been available for a while now, but most developer are still using them like media queries with a differ syntax. There's a much more powerful mental model that unlocks truly reusuable components. 
+        </p>
+
+        <span class="tag front">
+          Frontend
+        </span>
+      </div>
+        
+      </div>
+
+      <div class="card">
+        <div class="sidebar-flex" >
+          <span class="small-dot-flex blue"></span>
+        <div class="card-top">
+
+          <div class="card-left">
+            <span class="small-dot small-dot-black"><div class="s-dot">F</div></span>
+            <span>Figma Blog &#8226 6h ago</span>
+          </div>
+
+         
+
+        </div>
+
+        <h2>
+          introducing Variables 2.0:Design Tokens Meet Real Logic 
+        </h2>
+
+        <p>
+         Variables in Figma now support conditional logic, mathematical expressions, and cross-fle references. This unlocks design system workflows that were previously only possible in code.
+        </p>
+
+        <span class="tag ai">
+          Variables
+        </span>
+      </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
